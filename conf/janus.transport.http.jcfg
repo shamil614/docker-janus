@@ -36,11 +36,11 @@ general: {
 # a secret that must be provided in all requests as a crude form of
 # authorization mechanism, and partial or full source IPs if you want to
 # limit access basing on IP addresses. For security reasons, this
-# endpoint is disabled by default, enable it by setting admin_http=yes.
+# endpoint is disabled by default, enable it by setting admin_http=true.
 admin: {
 	admin_base_path = "/admin"			# Base path to bind to in the admin/monitor web server (plain HTTP only)
 	admin_threads = "unlimited"			# unlimited=thread per connection, number=thread pool
-	admin_http = yes					# Whether to enable the plain HTTP interface
+	admin_http = true					# Whether to enable the plain HTTP interface
 	admin_port = 7088					# Admin/monitor web server HTTP port
 	#admin_interface = "eth0"			# Whether we should bind this server to a specific interface only
 	#admin_ip = "192.168.0.1"			# Whether we should bind this server to a specific IP address (v4 or v6) only
